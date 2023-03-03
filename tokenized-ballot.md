@@ -9,6 +9,6 @@ The contract has the following features:
 - Snapshots
 - Roles
 
-[oz contract](./oz-wizard-contract.png)
+![oz contract](./oz-wizard-contract.png)
 
 It is currently possible to delegate votes see.
