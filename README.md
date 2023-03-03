@@ -50,5 +50,5 @@ A general drawback to these ideas occurs where the number of votes cast is small
 
 ## Team
 
-- Meek Msaki - Studying Zero Knowledge Proof Proofs bootcamp by extropyio
+- Meek Msaki - Studying Zero Knowledge Proofs bootcamp by extropyio
 - Erik Larson - Online Fintech Instructor & Studying Zero Knowledge Proofs Bootcamp by extropyio
