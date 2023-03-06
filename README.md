@@ -1,5 +1,8 @@
 # Minimal Anti-Collision Infrastructure (MACI)
 
+> **Note**
+> I am no longer working on this project - Original idea for proposal from [Nouns DAO](https://github.com/mmsaki/maci-voting.git)
+
 We have been inspired by the work of Wei Jei from Ethereum and want to build a working prototype to for Nouns.
 
 ## Anti Bribery ZKVote

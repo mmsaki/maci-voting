@@ -12,3 +12,5 @@ The contract has the following features:
 ![oz contract](./oz-wizard-contract.png)
 
 It is currently possible to delegate votes see.
+
+to be continued ...
