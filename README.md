@@ -1,6 +1,8 @@
-# ZK Voting Systems
+# Minimal Anti-Collision Infrastructure (MACI)
 
-A program with rewarding users in voting systems.
+We have been inspired by the work of Wei Jei from Ethereum and want to build a working prototype to for Nouns.
+
+## Anti Bribery ZKVote
 
 Imagine a system where users can vote with tokens(which they retain) and are rewarded for the number of votes they receive in a period.
 
@@ -8,7 +10,7 @@ Suppose that some wealthy user acquires some quantity N of tokens, and as a resu
 
 The user simply upvotes their own sockpuppet accounts, giving themselves the reward of $N•k•q$. Then each user has an 'interest rate' of $k•q$ per period.
 
-see [collision article]() and [governance]() by Vitalik.
+see [collision article](https://vitalik.ca/general/2019/04/03/collusion.html) and [governance](https://vitalik.ca/general/2017/12/17/voting.html) by Vitalik.
 
 ## Bribery in voting systems
 
@@ -21,6 +23,8 @@ A further refinement is then to allow Alice to vote multiple times, revoking the
 In the case Charlie loses the confidence that he has in the information that Alice sends him, as he knows she could have accepted his bribe, then later voted for someone else (and maybe get a bribe from them etc.)
 
 MACI uses this approach, plus ZKPs to create an infrastructure that mitigates the effect of collision.
+
+Even if Alice gives her private key to Charlie, because the vote is encrypted, Charlie has no way to prove whom Alice voted for by from the hash.
 
 ## Minimal Anti-Collision Infrastructure
 
@@ -38,17 +42,15 @@ Even if Alice reveals the clear text of her vote to Bob, she needs to not show h
 
 ## ZKPs used in Minimal Anti-Collision Infrastructure
 
-From MACI documentation:
+From [MACI](https://privacy-scaling-explorations.github.io/maci/cli.html) documentation:
 
-There are two zkSNARK circuits in MACI: one which allows the coordinator to prove the correctness of each state root transaction, and the other which proves that they have correctly tallied all the votes.
+There are two zkSNARK circuits in MACI: currently one which allows the coordinator to prove the correctness of each state root transaction, and the other which proves that they have correctly tallied all the votes.
 
-## Quadratic Voting
+## MACI & Quadratic Voting
 
 Quadratic voting works by allowing users to "pay" for additional votes on a given matter to express their support for given issues more strongly, resulting in voting outcomes that are aligned with the highest willingness to pay outcome, rather than just the outcome preferred by the majority regardless of the intensity of individual preferences.
 
-A general drawback to these ideas occurs where the number of votes cast is small.
-
 ## Team
 
-- Meek Msaki - Studying Zero Knowledge Proofs bootcamp by extropyio
-- Erik Larson - Online Fintech Instructor & Studying Zero Knowledge Proofs Bootcamp by extropyio
+- Meek Msaki - Blockchain developer, Zero Knowledge student
+- Erik Larson - Blockchain instructor
